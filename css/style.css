@@ -6,6 +6,10 @@ body,html{
  font-family: 'Lato',sans-serif;
 }
 
+.holiday-wrap{
+ overflow-x: hidden;
+}
+
 
 .loading{
  position: fixed;
@@ -31,10 +35,7 @@ body,html{
 }
 
 h1,h2,h3,h4,h5,h6{margin: 0; font-size: 12px; line-height: 1;}
-h1{}
-h2{}
-h3{}
-h4{}
+
 
 
 /** GRID **/
@@ -306,13 +307,15 @@ z-index: 9001;
 }
 
 .page-section .row{
- position: relative;
- display: table-cell;
- vertical-align: middle;
- height: 100%;    
- font-size: 1.2em;
- line-height: 1.25em;    
- color:#666;    
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    color: #666;
+    width: 100%;
+    max-width: 100%;    
 }
 
 .page-section .row h2{

@@ -129,7 +129,7 @@ setTimeout(function(){
     $(document).ready(function(){
  
  var hero = $('.hero');
- var rangerRick = 600;
+ var rangerRick = 200;
  
  $(window).on('scroll',function(){
  var scrollTop = $(this).scrollTop();
@@ -137,7 +137,7 @@ setTimeout(function(){
  var height = hero.outerHeight();
  offset = offset + height/2; 
  
- var calc = 1 - (scrollTop - offset + rangerRick) / rangerRick;
+ var calc = 1 - (scrollTop - offset + rangerRick+"px") / rangerRick;
 hero.css({top:calc*2});     
      
      
